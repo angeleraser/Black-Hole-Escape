@@ -354,9 +354,9 @@ const playGame = () =>{
   
         if (timing(0, 2)) levelPassScreenText('Keep the distance from Black Hole by tapping alternately the red buttons S & D')
         // LEVEL 1 from 5% to 28% 
-        if (timing(4)) levelPassScreenText(`${span('- STAGE 1 -')}Tap S & D 300 times.`);
+        if (timing(4)) levelPassScreenText(`${span('- STAGE 1 -')}Tap S & D 100 times.`);
         BLACK_HOLE.setGrowAnimation(timing(4.7), 5, 'rotate', 45);
-        if (timing(4.7, 4.8)) keysToPress = 300;
+        if (timing(4.7, 4.8)) keysToPress = 100;
         if (timing(5, 28) && keysToPress > 0) {
           ROCKET.decreaseDistance(5);
         }
@@ -424,9 +424,9 @@ const playGame = () =>{
   
         // LEVEL 2 from 35% to 60%
         if (timing(35)) {
-          levelPassScreenText(`${span('- STAGE 2 -')}Tap 350 times.`);
+          levelPassScreenText(`${span('- STAGE 2 -')}Tap 200 times.`);
         }
-        if (timing(35.5, 35.6)) keysToPress = 350;
+        if (timing(35.5, 35.6)) keysToPress = 200;
         if (timing(35.5, 59) && keysToPress > 0) {
           ROCKET.decreaseDistance(6);
         }
@@ -554,9 +554,9 @@ const playGame = () =>{
         // BREAK TIME 58% to 73%
         BLACK_HOLE.setGrowAnimation(timing(58.6), 5, 'rotate', 55);
         // LEVEL 3 from 66% to 100% 
-        if (timing(66.1, 66.2)) keysToPress = 500;
+        if (timing(66.1, 66.2)) keysToPress = 300;
         if (timing(66)) {
-          levelPassScreenText(`${span('- FINAL STAGE -')}Tap 500 times.`);
+          levelPassScreenText(`${span('- FINAL STAGE -')}Tap 300 times.`);
         }
         if (timing(66.1, 98) && keysToPress > 0) {
           ROCKET.decreaseDistance(6);
@@ -705,9 +705,6 @@ const playGame = () =>{
     }
   }
 }
-playButton.addEventListener('click',()=>{
-  
-})
 window.addEventListener('load', (e)=>{
   playButton.addEventListener('click', playGame)
 })
