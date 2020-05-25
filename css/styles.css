@@ -219,6 +219,7 @@ body {
   cursor: pointer;
   background-color: hsl(0, 80%, 55%);
   border: 2px solid #333;
+  user-select:none;
   border-radius: 50%;
   box-shadow: 0 9px rgb(175, 175, 175);
   transition: all .05s;
