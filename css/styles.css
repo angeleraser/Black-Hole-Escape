@@ -213,6 +213,7 @@ body {
   width: 6rem;
   margin-bottom: 2rem;
   user-select:none;
+  -webkit-user-select: none;
 }
 
 .button {
@@ -220,6 +221,7 @@ body {
   background-color: hsl(0, 80%, 55%);
   border: 2px solid #333;
   user-select:none;
+  -webkit-user-select: none;
   border-radius: 50%;
   box-shadow: 0 9px rgb(175, 175, 175);
   transition: all .05s;
@@ -239,12 +241,14 @@ body {
   box-shadow: 0 3px rgb(155, 155, 155);
   transform: translateY(6px);
   user-select:none;
+  -webkit-user-select: none;
 }
 
 .button-active {
   box-shadow: 0 3px rgb(155, 155, 155);
   transform: translateY(8px);
   user-select:none;
+  -webkit-user-select: none;
 }
 
 @keyframes rotate {
