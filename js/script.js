@@ -423,13 +423,13 @@ const playGame = () =>{
         BACKGROUND.setAnimation('transition', '.6s', timing(28));
   
         // LEVEL 2 from 35% to 60%
-//         if (timing(35)) {
-//           levelPassScreenText(`${span('- STAGE 2 -')}Tap 250 times.`);
-//         }
-//         if (timing(35.5, 35.6)) keysToPress = 250;
-//         if (timing(35.5, 59) && keysToPress > 0) {
-//           ROCKET.decreaseDistance(6);
-//         }
+        if (timing(35)) {
+          levelPassScreenText(`${span('- STAGE 2 -')}Tap 250 times.`);
+        }
+        if (timing(35.5, 35.6)) keysToPress = 250;
+        if (timing(35.5, 59) && keysToPress > 0) {
+          ROCKET.decreaseDistance(6);
+        }
         BLACK_HOLE.setGrowAnimation(timing(35.5), 5, 'rotate', 55);
         BACKGROUND.setAnimation('transition', '.5s', timing(35.5));
         BLACK_HOLE.setTransitionTime(timing(42), 2)
@@ -554,13 +554,13 @@ const playGame = () =>{
         // BREAK TIME 58% to 73%
         BLACK_HOLE.setGrowAnimation(timing(58.6), 5, 'rotate', 55);
         // LEVEL 3 from 66% to 100% 
-//         if (timing(66.1, 66.2)) keysToPress = 350;
-//         if (timing(66)) {
-//           levelPassScreenText(`${span('- FINAL STAGE -')}Tap 350 times.`);
-//         }
-//         if (timing(66.1, 98) && keysToPress > 0) {
-//           ROCKET.decreaseDistance(6);
-//         }
+        if (timing(66.1, 66.2)) keysToPress = 350;
+        if (timing(66)) {
+          levelPassScreenText(`${span('- FINAL STAGE -')}Tap 350 times.`);
+        }
+        if (timing(66.1, 98) && keysToPress > 0) {
+          ROCKET.decreaseDistance(6);
+        }
         BLACK_HOLE.setGrowAnimation(timing(66.1), 7, 'rotate', 35);
         BACKGROUND.setAnimation('transition', '.5s', timing(66.1));
         BACKGROUND.setAnimation('transition', '.4s', timing(73.2));
