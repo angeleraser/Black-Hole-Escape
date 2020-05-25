@@ -333,7 +333,6 @@ body {
 }
 @media screen and (min-width:480px) {
   .game-screen {
-    margin-top: 2rem;
     height: 38rem;
     width: 26rem;
   }
