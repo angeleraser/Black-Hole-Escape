@@ -354,15 +354,15 @@ const playGame = () =>{
   
         if (timing(0, 2)) levelPassScreenText('Keep the distance from Black Hole by tapping alternately the red buttons S & D')
         // LEVEL 1 from 5% to 28% 
-//         if (timing(4)) levelPassScreenText(`${span('- STAGE 1 -')}Tap S & D 200 times.`);
-//         BLACK_HOLE.setGrowAnimation(timing(4.7), 5, 'rotate', 45);
-//         if (timing(4.7, 4.8)) keysToPress = 200;
-//         if (timing(5, 28) && keysToPress > 0) {
-//           ROCKET.decreaseDistance(5);
-//         }
-//         if (timing(28, 28.01) && keysToPress == 0) {
-//           levelPassScreenText('¡LEVEL COMPLETED!');
-//         }
+        if (timing(4)) levelPassScreenText(`${span('- STAGE 1 -')}Tap S & D 200 times.`);
+        BLACK_HOLE.setGrowAnimation(timing(4.7), 5, 'rotate', 45);
+        if (timing(4.7, 4.8)) keysToPress = 200;
+        if (timing(5, 28) && keysToPress > 0) {
+          ROCKET.decreaseDistance(5);
+        }
+        if (timing(28, 28.01) && keysToPress == 0) {
+          levelPassScreenText('¡LEVEL COMPLETED!');
+        }
   
         BACKGROUND.setAnimation('transition', '.6s', timing(4.7));
         BLACK_HOLE.setGrowAnimation(timing(8.4), 7, 'rotate', 35);
