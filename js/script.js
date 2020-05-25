@@ -424,9 +424,9 @@ const playGame = () =>{
   
         // LEVEL 2 from 35% to 60%
         if (timing(35)) {
-          levelPassScreenText(`${span('- STAGE 2 -')}Tap 300 times.`);
+          levelPassScreenText(`${span('- STAGE 2 -')}Tap 250 times.`);
         }
-        if (timing(35.5, 35.6)) keysToPress = 300;
+        if (timing(35.5, 35.6)) keysToPress = 250;
         if (timing(35.5, 59) && keysToPress > 0) {
           ROCKET.decreaseDistance(6);
         }
@@ -554,9 +554,9 @@ const playGame = () =>{
         // BREAK TIME 58% to 73%
         BLACK_HOLE.setGrowAnimation(timing(58.6), 5, 'rotate', 55);
         // LEVEL 3 from 66% to 100% 
-        if (timing(66.1, 66.2)) keysToPress = 400;
+        if (timing(66.1, 66.2)) keysToPress = 350;
         if (timing(66)) {
-          levelPassScreenText(`${span('- FINAL STAGE -')}Tap 400 times.`);
+          levelPassScreenText(`${span('- FINAL STAGE -')}Tap 350 times.`);
         }
         if (timing(66.1, 98) && keysToPress > 0) {
           ROCKET.decreaseDistance(6);
