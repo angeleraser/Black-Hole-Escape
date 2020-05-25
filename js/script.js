@@ -354,15 +354,15 @@ const playGame = () =>{
   
         if (timing(0, 2)) levelPassScreenText('Keep the distance from Black Hole by tapping alternately the red buttons S & D')
         // LEVEL 1 from 5% to 28% 
-        if (timing(4)) levelPassScreenText(`${span('- STAGE 1 -')}Tap S & D 200 times.`);
-        BLACK_HOLE.setGrowAnimation(timing(4.7), 5, 'rotate', 45);
-        if (timing(4.7, 4.8)) keysToPress = 200;
-        if (timing(5, 28) && keysToPress > 0) {
-          ROCKET.decreaseDistance(5);
-        }
-        if (timing(28, 28.01) && keysToPress == 0) {
-          levelPassScreenText('¡LEVEL COMPLETED!');
-        }
+//         if (timing(4)) levelPassScreenText(`${span('- STAGE 1 -')}Tap S & D 200 times.`);
+//         BLACK_HOLE.setGrowAnimation(timing(4.7), 5, 'rotate', 45);
+//         if (timing(4.7, 4.8)) keysToPress = 200;
+//         if (timing(5, 28) && keysToPress > 0) {
+//           ROCKET.decreaseDistance(5);
+//         }
+//         if (timing(28, 28.01) && keysToPress == 0) {
+//           levelPassScreenText('¡LEVEL COMPLETED!');
+//         }
   
         BACKGROUND.setAnimation('transition', '.6s', timing(4.7));
         BLACK_HOLE.setGrowAnimation(timing(8.4), 7, 'rotate', 35);
@@ -423,13 +423,13 @@ const playGame = () =>{
         BACKGROUND.setAnimation('transition', '.6s', timing(28));
   
         // LEVEL 2 from 35% to 60%
-        if (timing(35)) {
-          levelPassScreenText(`${span('- STAGE 2 -')}Tap 250 times.`);
-        }
-        if (timing(35.5, 35.6)) keysToPress = 250;
-        if (timing(35.5, 59) && keysToPress > 0) {
-          ROCKET.decreaseDistance(6);
-        }
+//         if (timing(35)) {
+//           levelPassScreenText(`${span('- STAGE 2 -')}Tap 250 times.`);
+//         }
+//         if (timing(35.5, 35.6)) keysToPress = 250;
+//         if (timing(35.5, 59) && keysToPress > 0) {
+//           ROCKET.decreaseDistance(6);
+//         }
         BLACK_HOLE.setGrowAnimation(timing(35.5), 5, 'rotate', 55);
         BACKGROUND.setAnimation('transition', '.5s', timing(35.5));
         BLACK_HOLE.setTransitionTime(timing(42), 2)
@@ -554,13 +554,13 @@ const playGame = () =>{
         // BREAK TIME 58% to 73%
         BLACK_HOLE.setGrowAnimation(timing(58.6), 5, 'rotate', 55);
         // LEVEL 3 from 66% to 100% 
-        if (timing(66.1, 66.2)) keysToPress = 350;
-        if (timing(66)) {
-          levelPassScreenText(`${span('- FINAL STAGE -')}Tap 350 times.`);
-        }
-        if (timing(66.1, 98) && keysToPress > 0) {
-          ROCKET.decreaseDistance(6);
-        }
+//         if (timing(66.1, 66.2)) keysToPress = 350;
+//         if (timing(66)) {
+//           levelPassScreenText(`${span('- FINAL STAGE -')}Tap 350 times.`);
+//         }
+//         if (timing(66.1, 98) && keysToPress > 0) {
+//           ROCKET.decreaseDistance(6);
+//         }
         BLACK_HOLE.setGrowAnimation(timing(66.1), 7, 'rotate', 35);
         BACKGROUND.setAnimation('transition', '.5s', timing(66.1));
         BACKGROUND.setAnimation('transition', '.4s', timing(73.2));
