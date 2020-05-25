@@ -237,11 +237,13 @@ body {
 .button:active {
   box-shadow: 0 3px rgb(155, 155, 155);
   transform: translateY(6px);
+  user-select:none;
 }
 
 .button-active {
   box-shadow: 0 3px rgb(155, 155, 155);
   transform: translateY(8px);
+  user-select:none;
 }
 
 @keyframes rotate {
