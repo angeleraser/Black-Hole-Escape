@@ -358,7 +358,7 @@ const playGame = () =>{
         BLACK_HOLE.setGrowAnimation(timing(4.7), 5, 'rotate', 45);
         if (timing(4.7, 4.8)) keysToPress = 200;
         if (timing(5, 28) && keysToPress > 0) {
-          ROCKET.decreaseDistance(5);
+          ROCKET.decreaseDistance(2);
         }
         if (timing(28, 28.01) && keysToPress == 0) {
           levelPassScreenText('¡LEVEL COMPLETED!');
@@ -428,7 +428,7 @@ const playGame = () =>{
         }
         if (timing(35.5, 35.6)) keysToPress = 250;
         if (timing(35.5, 59) && keysToPress > 0) {
-          ROCKET.decreaseDistance(6);
+          ROCKET.decreaseDistance(3);
         }
         BLACK_HOLE.setGrowAnimation(timing(35.5), 5, 'rotate', 55);
         BACKGROUND.setAnimation('transition', '.5s', timing(35.5));
@@ -559,7 +559,7 @@ const playGame = () =>{
           levelPassScreenText(`${span('- FINAL STAGE -')}Tap 350 times.`);
         }
         if (timing(66.1, 98) && keysToPress > 0) {
-          ROCKET.decreaseDistance(6);
+          ROCKET.decreaseDistance(4);
         }
         BLACK_HOLE.setGrowAnimation(timing(66.1), 7, 'rotate', 35);
         BACKGROUND.setAnimation('transition', '.5s', timing(66.1));
